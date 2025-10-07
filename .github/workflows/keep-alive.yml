@@ -3,7 +3,7 @@ name: Keep Render Backend Alive
 # When to run this workflow
 on:
   schedule:
-    - cron: '*/2 * * * *' # every 5 minutes
+    - cron: '*/2 * * * *' # every 2 minutes
   workflow_dispatch: # allows manual run from GitHub Actions tab
 
 jobs:
