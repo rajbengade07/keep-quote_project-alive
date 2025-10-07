@@ -1,0 +1,14 @@
+name: Keep Render Backend Alive
+
+# When to run this workflow
+on:
+  schedule:
+    - cron: '*/2 * * * *' # every 5 minutes
+  workflow_dispatch: # allows manual run from GitHub Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Backend
+        run: curl -X GET https://quote-generator-backend-u0n3.onrender.com/gc
