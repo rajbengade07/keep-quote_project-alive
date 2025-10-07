@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Render Backend
-        run: curl -X GET https://quote-generator-backend-u0n3.onrender.com/gc
+        run: curl -X GET https://quote-generator-backend-ntkz.onrender.com/gc
